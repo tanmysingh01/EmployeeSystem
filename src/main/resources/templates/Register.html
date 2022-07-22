@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymleaf.com">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+	integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+	crossorigin="anonymous">
+
+<title>Register</title>
+</head>
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<a class="navbar-brand" href="/">EMS</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+			<div class="navbar-nav">
+				<a class="nav-item nav-link" href="/elist">EmpList</a>
+				<a class="nav-item nav-link" href="/register">Add Employee</a>
+				<a class="nav-item nav-link" href="/search">Search</a>
+				
+			</div>
+		</div>
+	</nav>
+	
+
+	
+<div class="container p-5">	
+<div class="card col-md-6 offset-md-3" >
+	<h3 class="text-center text-primary p-1" >Register Here !!</h3>
+	<form th:action="@{/addemp}" method= post >
+  <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" name="name" placeholder="Name of the employee">
+  </div>
+  
+    
+  <div class="form-group">
+    <label for="phone">Mobile Number</label>
+    <input type="tel" class="form-control" name="phone" placeholder="Contact No. of the employee">
+  </div>
+    
+  <div class="form-group">
+    <label for="salary">Salary</label>
+    <input type="text" class="form-control" name="salary" placeholder="Salary of the employee">
+  </div>
+  
+  <div class="form-group">
+  <button type="submit" class="btn btn-primary btn-block p-2" value="submit">Submit</button></div>
+</form>
+</div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
