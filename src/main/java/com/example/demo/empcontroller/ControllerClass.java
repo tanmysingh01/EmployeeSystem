@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.example.demo.empentity.Employee;
-import com.example.demo.empentity.user;
+
 import com.example.demo.empservice.EmpService;
 
 @Controller
@@ -114,13 +114,13 @@ public class ControllerClass {
 		return "login.html";
 	}
 	
-	@PostMapping("/logine")
-	public String logindo(@ModelAttribute user u, HttpSession session) {
-		System.out.println(u);
-		session.setAttribute("msg", "Employee has been added Successfully!!");
-		return "redirect:/elist";
-		 
-	}
+	/*
+	 * @PostMapping("/logine") public String logindo(@ModelAttribute User u,
+	 * HttpSession session) { System.out.println(u); session.setAttribute("msg",
+	 * "Employee has been added Successfully!!"); return "redirect:/elist";
+	 * 
+	 * }
+	 */
 	
 	 
 
