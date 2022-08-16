@@ -7,5 +7,6 @@ import com.example.demo.empentity.User;
 public interface UserRepositoty extends JpaRepository<User, Long> {
 	
 	User findByUsername(String username);
+	
 
 }
