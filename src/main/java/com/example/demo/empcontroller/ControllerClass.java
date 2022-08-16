@@ -108,10 +108,16 @@ public class ControllerClass {
 	
 	
 	
-	@RequestMapping("/login")
+	@GetMapping("/signin")
 		
 	public String login() {
 		return "login.html";
+	}
+	
+	@RequestMapping("/logout-success")
+	
+	public String logout() {
+		return "logout.html";
 	}
 	
 	/*
